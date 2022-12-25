@@ -1,0 +1,204 @@
+namespace = maid_character
+
+maid_character.1 = {
+	type = country_event
+	placement = root
+	title = maid_character.1.t
+	desc = maid_character.1.desc
+	flavor = maid_character.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/maid_generic_1.bik"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	#on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/political_extremism"
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+
+	trigger = {
+		
+	}
+	immediate = {
+		
+	}
+
+	option = {
+		name = maid_character.1.a
+		set_variable = {
+			name = maid_unlock_izayoi_sakuya_var
+		}
+		default_option = yes
+	}
+	option = {
+		name = maid_character.1.b
+		set_variable = {
+			name = maid_unlock_izayoi_sakuya_var
+		} 
+	}
+}
+
+maid_character.101 = {
+	type = country_event
+	placement = root
+	title = maid_character.101.t
+	desc = maid_character.101.desc
+	flavor = maid_character.101.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/maid_sakuya_1.bik"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	#on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/political_extremism"
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+
+	trigger = {
+		
+	}
+	immediate = {
+		
+	}
+
+	option = {
+		name = maid_character.101.a
+		add_modifier = maid_izayoi_sakuya_bonus_bureaucracy_modifier
+		set_variable = {
+			name = maid_sakuya_bonus_bureaucracy_triggered_var
+		}
+		trigger = {
+			NOT = { has_variable = maid_sakuya_bonus_bureaucracy_triggered_var }
+		}
+	}
+	option = {
+		name = maid_character.101.b
+		add_modifier = maid_izayoi_sakuya_bonus_authority_modifier
+		set_variable = {
+			name = maid_sakuya_bonus_authority_triggered_var
+		}
+		trigger = {
+			NOT = { has_variable = maid_sakuya_bonus_authority_triggered_var }
+		}
+	}
+	option = {
+		name = maid_character.101.c
+		add_modifier = maid_izayoi_sakuya_bonus_taxcapacity_modifier
+		set_variable = {
+			name = maid_izayoi_sakuya_bonus_taxcapacity_triggered_var
+		}
+		trigger = {
+			NOT = { has_variable = maid_izayoi_sakuya_bonus_taxcapacity_triggered_var }
+		}
+	}
+	option = {
+		name = maid_character.101.d
+		default_option = yes
+	}
+	option = {
+		name = maid_character.101.e
+		add_modifier = maid_izayoi_sakuya_bonus_taxcapacity_2_modifier
+		trigger = {
+			has_modifier = maid_izayoi_sakuya_bonus_bureaucracy_modifier
+			has_modifier = maid_izayoi_sakuya_bonus_taxcapacity_modifier
+			NOT = { has_modifier = maid_izayoi_sakuya_bonus_taxcapacity_2_modifier }
+		}
+	}
+	option = {
+		name = maid_character.101.g
+		remove_modifier = maid_izayoi_sakuya_bonus_taxcapacity_2_modifier
+		trigger = {
+			has_modifier = maid_izayoi_sakuya_bonus_taxcapacity_2_modifier
+		}
+	}
+}
+
+maid_character.2 = {
+	type = country_event
+	placement = root
+	title = maid_character.2.t
+	desc = maid_character.2.desc
+	flavor = maid_character.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/maid_generic_1.bik"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	#on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/political_extremism"
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+
+	trigger = {
+		
+	}
+	immediate = {
+		
+	}
+
+	option = {
+		name = maid_character.2.a
+		set_variable = {
+			name = maid_unlock_noelle_var
+		}
+		default_option = yes
+	}
+	option = {
+		name = maid_character.2.b
+		set_variable = {
+			name = maid_unlock_noelle_var
+		} 
+	}
+}
+
+maid_character.201 = {
+	type = country_event
+	placement = root
+	title = maid_character.201.t
+	desc = maid_character.201.desc
+	flavor = maid_character.201.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/maid_noelle_1.bik"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	#on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/political_extremism"
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+
+	trigger = {
+		
+	}
+	immediate = {
+		
+	}
+
+	option = {
+		name = maid_character.201.a
+		add_modifier = maid_noelle_bonus_bureaucracy_modifier
+		set_variable = {
+			name = maid_noelle_bonus_bureaucracy_triggered_var
+		}
+		trigger = {
+			NOT = { has_variable = maid_noelle_bonus_bureaucracy_triggered_var }
+		}
+	}
+	option = {
+		name = maid_character.201.b
+		add_modifier = maid_noelle_bonus_army_defence_modifier
+		set_variable = {
+			name = maid_noelle_bonus_army_defence_triggered_var
+		}
+		trigger = {
+			NOT = { has_variable = maid_noelle_bonus_army_defence_triggered_var }
+		}
+	}
+	option = {
+		name = maid_character.201.c
+	}
+	option = {
+		name = maid_character.201.d
+		default_option = yes
+	}
+}

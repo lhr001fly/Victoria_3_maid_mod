@@ -1,0 +1,19 @@
+maid_izayoi_sakuya_bonus_bureaucracy_modifier = {
+	country_bureaucracy_add = 100
+}
+maid_noelle_bonus_bureaucracy_modifier = {
+	country_bureaucracy_add = 100
+}
+maid_izayoi_sakuya_bonus_authority_modifier = {
+	country_authority_add = 100
+}
+maid_noelle_bonus_army_defence_modifier = {
+	unit_army_defense_add = 50
+}
+maid_izayoi_sakuya_bonus_taxcapacity_modifier = {
+	state_tax_capacity_add = 100
+}
+maid_izayoi_sakuya_bonus_taxcapacity_2_modifier = {
+	country_bureaucracy_add = -100
+	state_tax_capacity_add = 100
+}

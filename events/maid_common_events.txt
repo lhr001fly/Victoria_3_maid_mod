@@ -1,0 +1,54 @@
+namespace = maid_mod
+
+maid_mod.1 = {
+	type = country_event
+	placement = root
+	title = maid_mod.1.t
+	desc = maid_mod.1.desc
+	flavor = maid_mod.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/maid_alice_1.bik"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/political_extremism"
+
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+
+	trigger = {
+		# triggered by communsim JE 1
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = maid_mod.1.a
+		trigger = {
+			NOT = { has_law = law_type:law_wage_subsidies }
+			NOT = { has_law = law_type:law_old_age_pension }
+		}
+	}
+	option = {
+		name = maid_mod.1.b
+		trigger = {
+			NOT = { has_law = law_type:law_slavery_banned }
+		}
+	}
+	option = { # Regulatory bodies
+		name = maid_mod.1.c
+		trigger = {
+			NOT = { has_law = law_type:law_regulatory_bodies }
+			NOT = { has_law = law_type:law_worker_protections }
+		}
+	}
+	option = {
+		name = maid_mod.1.d
+		default_option = yes
+	}
+}
+

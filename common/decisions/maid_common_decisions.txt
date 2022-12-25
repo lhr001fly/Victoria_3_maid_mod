@@ -1,0 +1,53 @@
+maid_show_all_decisions = {
+	is_shown = {
+		is_ai = no
+		NOT = { has_variable = maid_show_all_decisions_var }
+	}
+	possible = {
+
+	}
+
+	ai_chance = {
+		base = 0
+    }
+	when_taken = {
+		set_variable = maid_show_all_decisions_var
+	}
+}
+
+maid_close_all_decisions = {
+	is_shown = {
+		is_ai = no
+		has_variable = maid_show_all_decisions_var
+	}
+	possible = {
+
+	}
+
+	ai_chance = {
+		base = 0
+    }
+	when_taken = {
+		remove_variable = maid_show_all_decisions_var
+	}
+}
+
+maid_testing_decision_1 = {
+	is_shown = {
+		is_ai = no
+		has_variable = maid_show_all_decisions_var
+	}
+
+	possible = {
+		
+	}
+	
+	when_taken = {
+		set_variable = maid_enable_maid_interest_group_var
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
+

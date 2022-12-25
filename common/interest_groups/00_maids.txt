@@ -11,6 +11,7 @@
 	
 	enable = {
 		has_variable = maid_enable_maid_interest_group_var
+		#但是由于enable是初始化的时候判定的，所以上述条件无效。因为需要暂时隐藏此利益集团，所以暂不删除。
 	}
 	
 	traits = {

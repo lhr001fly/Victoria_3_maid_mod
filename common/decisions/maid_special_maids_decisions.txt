@@ -1,8 +1,8 @@
 maid_show_all_specialmaids_decisions = {
 	is_shown = {
 		is_ai = no
+		has_variable = maid_show_all_decisions_var
 		NOT = {
-			has_variable = maid_show_all_decisions_var
 			has_variable = maid_show_all_specialmaids_decisions_var
 		}
 	}
@@ -171,6 +171,54 @@ maid_noelle_1 = {
 	when_taken = {
 		trigger_event = {
 			id = maid_character.201
+			popup = yes
+		}
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
+
+maid_unlock_felicia = {
+	is_shown = {
+		is_ai = no
+		has_variable = maid_show_all_decisions_var
+		has_variable = maid_show_all_specialmaids_decisions_var
+		NOT = { has_variable = maid_unlock_felicia_var }
+	}
+
+	possible = {
+		
+	}
+	
+	when_taken = {
+		trigger_event = {
+			id = maid_character.3
+			popup = yes
+		}
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
+
+maid_felicia_1 = {
+	is_shown = {
+		is_ai = no
+		has_variable = maid_show_all_decisions_var
+		has_variable = maid_show_all_specialmaids_decisions_var
+		has_variable = maid_unlock_felicia_var
+	}
+
+	possible = {
+		
+	}
+	
+	when_taken = {
+		trigger_event = {
+			id = maid_character.301
 			popup = yes
 		}
 	}

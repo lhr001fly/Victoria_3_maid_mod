@@ -79,17 +79,45 @@ maid_alice_casilia.3 = { #爱丽丝 卡希莉雅
 	option = {
 		name = maid_alice_casilia.3.a
 		add_treasury = 10000
+		set_variable = {
+			name = maid_alice_casilia_10k_money_triggered_var
+		}
+		trigger = {
+			NOT = { has_variable = maid_alice_casilia_10k_money_triggered_var }
+		}
 	}
 	option = {
 		name = maid_alice_casilia.3.b
 		add_treasury = 100000
+		set_variable = {
+			name = maid_alice_casilia_100k_money_triggered_var
+		}
+		trigger = {
+			NOT = { has_variable = maid_alice_casilia_100k_money_triggered_var }
+		}
 	}
 	option = {
 		name = maid_alice_casilia.3.c
 		add_treasury = 1000000
+		set_variable = {
+			name = maid_alice_casilia_1m_money_triggered_var
+		}
+		trigger = {
+			NOT = { has_variable = maid_alice_casilia_1m_money_triggered_var }
+		}
 	}
 	option = {
 		name = maid_alice_casilia.3.d
 		default_option = yes
+	}
+	option = {
+		name = maid_alice_casilia.3.e
+		add_modifier = maid_alice_casilia_bonus_tax_2000_modifier
+		trigger = {
+			has_variable = maid_alice_casilia_10k_money_triggered_var
+			has_variable = maid_alice_casilia_100k_money_triggered_var
+			has_variable = maid_alice_casilia_1m_money_triggered_var
+			not = { has_modifier = maid_alice_casilia_bonus_tax_2000_modifier }
+		}
 	}
 }

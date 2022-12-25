@@ -4,6 +4,9 @@ maid_izayoi_sakuya_bonus_bureaucracy_modifier = {
 maid_noelle_bonus_bureaucracy_modifier = {
 	country_bureaucracy_add = 100
 }
+maid_felicia_bonus_bureaucracy_modifier = {
+	country_bureaucracy_add = 50
+}
 maid_izayoi_sakuya_bonus_authority_modifier = {
 	country_authority_add = 100
 }
@@ -16,4 +19,14 @@ maid_izayoi_sakuya_bonus_taxcapacity_modifier = {
 maid_izayoi_sakuya_bonus_taxcapacity_2_modifier = {
 	country_bureaucracy_add = -100
 	state_tax_capacity_add = 100
+}
+maid_alice_casilia_bonus_tax_2000_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_tax_income_add = 2000
+}
+maid_felicia_help_trade_union_1_modifier = {
+	interest_group_ig_trade_unions_pol_str_mult = 0.5
+}
+maid_felicia_help_trade_union_2_modifier = {
+	interest_group_ig_trade_unions_pol_str_mult = 2
 }

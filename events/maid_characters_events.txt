@@ -202,3 +202,114 @@ maid_character.201 = {
 		default_option = yes
 	}
 }
+
+maid_character.3 = {
+	type = country_event
+	placement = root
+	title = maid_character.3.t
+	desc = maid_character.3.desc
+	flavor = maid_character.3.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/maid_generic_1.bik"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	#on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/political_extremism"
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+
+	trigger = {
+		
+	}
+	immediate = {
+		
+	}
+
+	option = {
+		name = maid_character.3.a
+		set_variable = {
+			name = maid_unlock_felicia_var
+		}
+		default_option = yes
+	}
+	option = {
+		name = maid_character.3.b
+		set_variable = {
+			name = maid_unlock_felicia_var
+		} 
+	}
+}
+
+maid_character.301 = {
+	type = country_event
+	placement = root
+	title = maid_character.301.t
+	desc = maid_character.301.desc
+	flavor = maid_character.301.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/maid_felicia_1.bik"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	#on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/political_extremism"
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+
+	trigger = {
+		
+	}
+	immediate = {
+		
+	}
+
+	option = {
+		name = maid_character.301.a
+		add_modifier = maid_felicia_bonus_bureaucracy_modifier
+		trigger = {
+			NOT = { has_modifier = maid_felicia_bonus_bureaucracy_modifier }
+		}
+	}
+	option = {
+		name = maid_character.301.b
+		add_modifier = maid_felicia_help_trade_union_1_modifier
+		trigger = {
+			NOT = { has_modifier = maid_felicia_help_trade_union_1_modifier }
+		}
+	}
+	option = {
+		name = maid_character.301.c
+		remove_modifier = maid_felicia_help_trade_union_1_modifier
+		add_modifier = maid_felicia_help_trade_union_2_modifier
+		trigger = {
+			has_modifier = maid_felicia_bonus_bureaucracy_modifier
+			has_modifier = maid_felicia_help_trade_union_1_modifier
+		}
+	}
+	option = {
+		name = maid_character.301.d
+		if = {
+			limit = {
+				has_modifier = maid_felicia_help_trade_union_1_modifier
+			}
+			remove_modifier = maid_felicia_help_trade_union_1_modifier
+		}
+		if = {
+			limit = {
+				has_modifier = maid_felicia_help_trade_union_2_modifier
+			}
+			remove_modifier = maid_felicia_help_trade_union_2_modifier
+		}
+		trigger = {
+			OR = {
+				has_modifier = maid_felicia_help_trade_union_1_modifier
+				has_modifier = maid_felicia_help_trade_union_2_modifier
+			}
+		}
+	}
+	option = {
+		name = maid_character.301.e
+		default_option = yes
+	}
+}

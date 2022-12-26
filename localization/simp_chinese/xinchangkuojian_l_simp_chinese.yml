@@ -1,0 +1,16 @@
+﻿l_simp_chinese:
+ building_maid_cafe:0 "女仆咖啡厅"
+ pmg_maid_food_service:1 "$pm_base$"
+ pm_maid_dessert:0 "甜品"
+ pm_maid_dinner:0 "正餐"
+ pmg_maid_drink_service:1 "$pm_base$"
+ pm_maid_tea:0 "女仆茶室"
+ pm_maid_coffee:0 "女仆咖啡厅"
+ pm_maid_mixed:0 "女仆茶餐厅"
+ pmg_maid_ownership_capital_building:1 "$pm_base$"
+ pm_maid_merchant_guilds_building:0 "午后茶话会"
+ pm_maid_privately_owned_building:0 "女仆老板娘"
+ pm_maid_publicly_traded_building:0 "连锁加盟店"
+ pm_maid_government_run_building:0 "人民公仆"
+ pm_maid_worker_cooperative_building:0 "女仆互助会"
+ 

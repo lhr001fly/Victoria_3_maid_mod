@@ -1,0 +1,13 @@
+bg_maid_building_group = {
+	category = urban
+	
+	land_usage = urban
+
+	always_possible = yes
+	
+	auto_place_building = yes
+	
+	economy_of_scale = yes
+	
+	cash_reserves_max = 25000
+}

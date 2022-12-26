@@ -1,0 +1,175 @@
+pm_maid_dessert = {							
+    texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
+
+    state_modifiers = {
+		workforce_scaled = {
+			state_migration_pull_mult = 0.01
+		}
+    }
+
+    building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			building_input_sugar_add = 10
+			
+			# output goods
+			building_output_services_add = 10
+		}
+		
+		level_scaled = {
+			building_employment_laborers_add = 100
+			building_employment_clerks_add = 100
+		}
+    }
+}
+
+pm_maid_dinner = {							
+    texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
+
+    state_modifiers = {
+		workforce_scaled = {
+			state_migration_pull_mult = 0.01
+		}
+    }
+
+    building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			building_input_meat_add = 10
+			building_input_clothes_add = 10
+			
+			# output goods
+			building_output_services_add = 20
+		}
+		
+		level_scaled = {
+			building_employment_laborers_add = 100
+			building_employment_clerks_add = 100
+		}
+    }
+}
+
+pm_maid_tea = {
+	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_tea_add = 20
+		}
+    }
+}
+
+pm_maid_coffee = {
+	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_coffee_add = 20
+		}
+    }
+}
+
+pm_maid_mixed = {
+	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_coffee_add = 10
+			building_input_tea_add = 10
+		}
+    }
+}
+
+pm_maid_merchant_guilds_building = {
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
+
+	disallowing_laws = {
+		law_command_economy
+		law_council_republic
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 100
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 5
+		}
+	}
+}
+
+pm_maid_privately_owned_building = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	disallowing_laws = {
+		law_command_economy
+		law_council_republic
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 20
+		}
+		unscaled = {
+			building_capitalists_shares_add = 5
+		}
+	}
+}
+
+pm_maid_publicly_traded_building = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_technologies = {
+		mutual_funds
+	}
+
+	disallowing_laws = {
+		law_command_economy
+		law_council_republic
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 30
+		}
+		unscaled = {
+			building_capitalists_shares_add = 5
+		}
+	}
+}
+
+pm_maid_government_run_building = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+	
+	unlocking_laws = {
+		law_command_economy
+	}
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 30
+		}
+		unscaled = {
+			building_bureaucrats_shares_add = 5
+		}
+	}
+}
+
+pm_maid_worker_cooperative_building = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_laws = {
+		law_council_republic
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 100
+			building_employment_clerks_add = 100
+		}
+		unscaled = {
+			building_laborers_shares_add = 1
+			building_clerks_shares_add = 1
+		}
+	}
+}

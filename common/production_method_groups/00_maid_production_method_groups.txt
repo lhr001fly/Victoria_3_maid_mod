@@ -1,0 +1,27 @@
+pmg_maid_food_service = {
+	production_methods = {
+		pm_maid_dessert
+		pm_maid_dinner
+	}
+	texture = "gfx\interface\icons\generic_icons\mixed_icon_base.dds"
+}
+
+pmg_maid_drink_service = {
+	production_methods = {
+		pm_maid_tea
+		pm_maid_coffee
+		pm_maid_mixed
+	}
+	texture = "gfx\interface\icons\generic_icons\mixed_icon_base.dds"
+}
+
+pmg_maid_ownership_capital_building = {
+	production_methods = {
+		pm_maid_merchant_guilds_building
+		pm_maid_privately_owned_building
+		pm_maid_publicly_traded_building
+		pm_maid_government_run_building
+		pm_maid_worker_cooperative_building
+	}
+	texture = "gfx\interface\icons\generic_icons\mixed_icon_base.dds"
+}

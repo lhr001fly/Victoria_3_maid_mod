@@ -1,0 +1,9 @@
+building_input_coffee_add = {
+	good = no
+	percent = no
+}
+
+building_input_tea_add = {
+	good = no
+	percent = no
+}
